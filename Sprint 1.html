@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Encriptador</title>
+    <script src="index.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="logo"><img src="./src/logo.png"></img></div>
+        <div class="textcontainer">
+            <textarea placeholder="Ingrese el texto aquí" id="ingreso"></textarea>
+        </div>
+        <div class="buttonpanel">
+          <div class="info">
+            <img src="./src/info.png" id="iconinfo"></img> 
+            <p> &nbsp;&nbsp;&nbsp;Solo letras en minusculas y sin acentos</p>
+          </div>
+          
+
+          <div class="buttons">
+            <button id="btn-enc" onclick="encriptar()">Encriptar</button> <button id="btn-desc" onclick="desencriptar()">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div id="captionbox">
+        <img id="muneco" src="./src/Muneco.png"></img>
+        <div class="caption1">Ningún Mensaje fue encontrado</div>
+        <div class="caption2">Ingresa el texto que desees encriptar o desencriptar</div>
+        <div id="salida"> </div>
+        <button id="copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <footer> <p>❤ Hecho con amor por Sharon Vieira ❤</p></footer>
+</html>
